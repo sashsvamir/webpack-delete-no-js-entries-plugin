@@ -1,0 +1,15 @@
+{
+  "name": "webpack-delete-no-js-entries-plugin",
+  "version": "1.0.0",
+  "description": "This Webpack plugin will delete empty js files from output. This plugin will be applied only for entries with no js files (e.g. entries with styles only files).",
+  "main": "delete-no-js-entries-plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sashsvamir/webpack-delete-no-js-entries-plugin.git"
+  },
+  "author": "Alexander Shchukin <1340068@gmail.com>",
+  "license": "MIT"
+}

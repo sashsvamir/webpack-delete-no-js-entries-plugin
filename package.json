@@ -1,6 +1,6 @@
 {
   "name": "webpack-delete-no-js-entries-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This Webpack plugin will delete empty js files from output. This plugin will be applied only for entries with no js files (e.g. entries with styles only files).",
   "main": "delete-no-js-entries-plugin.js",
   "scripts": {

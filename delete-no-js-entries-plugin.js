@@ -16,13 +16,17 @@ class DeleteNoJsEntriesPlugin {
 
 			// prepare list of no js entry
 			compilation.chunks.forEach((chunk) => {
+				
+				if (chunk.entryModule) {
 
-				const entryNoJs = chunk.entryModule.dependencies.every((dep, index) => {
-					return /\.js$/.test(dep.request) === false;
-				});
+					const entryNoJs = chunk.entryModule.dependencies.every((dep, index) => {
+						return /\.js$/.test(dep.request) === false;
+					});
 
-				if (entryNoJs) {
-					this.entriesWithNoJs.push(chunk.name);
+					if (entryNoJs) {
+						this.entriesWithNoJs.push(chunk.name);
+					}
+					
 				}
 
 			});
